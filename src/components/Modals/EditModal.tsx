@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   Box, 
   Modal, 
@@ -6,9 +6,7 @@ import {
   IconButton, 
   Fade,
   Typography,
-  Avatar,
-  useTheme,
-  useMediaQuery
+  Avatar
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
@@ -33,7 +31,6 @@ interface EditModalProps {
 }
 
 export const EditModal = ({ open, onClose, post, onSubmit }: EditModalProps) => {
-  const theme = useTheme();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();

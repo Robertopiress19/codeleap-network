@@ -8,9 +8,7 @@ import {
   IconButton, 
   Fade,
   Avatar,
-  CircularProgress,
-  useTheme,
-  useMediaQuery
+  CircularProgress
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
@@ -35,7 +33,6 @@ const colors = {
 export const DeleteModal = ({ open, onClose, onConfirm }: DeleteModalProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
-  const theme = useTheme();
 
   useEffect(() => {
     if (open) {
