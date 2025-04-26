@@ -48,7 +48,6 @@ const SignupModal = ({ open, onClose, onSignup }: SignupModalProps) => {
   const [success, setSuccess] = useState<boolean>(false);
   
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     if (open) {

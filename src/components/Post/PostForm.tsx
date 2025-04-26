@@ -14,10 +14,7 @@ import {
   Send,
   FormatBold,
   FormatItalic,
-  FormatListBulleted,
-  ImageOutlined,
-  AttachFileOutlined,
-  EmojiEmotionsOutlined
+  FormatListBulleted
 } from '@mui/icons-material';
 
 const colors = {

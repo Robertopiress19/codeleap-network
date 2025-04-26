@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { 
   Box, 
-  Typography, 
-  Divider, 
+  Typography,  
   IconButton, 
   Avatar, 
   Tooltip, 
@@ -16,7 +15,6 @@ import {
   Edit, 
   Delete, 
   FavoriteBorder, 
-  ChatBubbleOutline,
   Favorite
 } from '@mui/icons-material';
 import { Post } from '../../types/post';

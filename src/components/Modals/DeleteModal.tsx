@@ -36,8 +36,6 @@ export const DeleteModal = ({ open, onClose, onConfirm }: DeleteModalProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  
 
   useEffect(() => {
     if (open) {
